@@ -14,7 +14,7 @@
     THE CREATIVITY ARCHITECT
   </title>
 
-  <link rel="stylesheet" type="text/css" href="src/build/style.css" />
+  <link rel="stylesheet" type="text/css" href="framework.css" />
 <style type="text/css">
 
 *,
@@ -77,20 +77,17 @@ html, #page { padding:0; margin:0;}
 
 </style>
   <script>
-    // conditionizr.com
-    // configure environment tests
-    conditionizr.config({
-      assets: '<?php echo esc_url( get_template_directory_uri() ); ?>',
-      tests: {}
-    });
-  </script>
-
-  <?php wp_enqueue_script('jquery'); ?>
-  <?php wp_head() ?>
+  // conditionizr.com
+// configure environment tests
+conditionizr.config({
+	assets: '<?php echo esc_url( get_template_directory_uri() ); ?>',
+	tests: {},
+});
+</script>
 
 </head>
 
-<body>
+<body id="page">
 
   {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
   {{> body}}
@@ -98,6 +95,6 @@ html, #page { padding:0; margin:0;}
 
   </footer>
     <script src="./main.js"></script>
-</body class="site container">
+</bodys>
 
 </html>
