@@ -379,5 +379,5 @@
             "-ms-filter:\\'progid:DXImageTransform.Microsoft.gradient",
             "text-shadow"
         ]
-    ];
+    ]
 }
