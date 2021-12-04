@@ -1,0 +1,100 @@
+*:focus
+{
+    outline: 0;
+}
+
+input,
+select,
+textarea
+{
+    line-height: $spacer * 1.5;
+
+    width: 100%;
+    height: $spacer * 1.5;
+    padding: 0 math.div($spacer, 2);
+
+    color: $body;
+    border: solid 1px $body;
+    border-radius: 0;
+    background-color: $body-bg;
+}
+
+input[type='checkbox'],
+input[type='radio']
+{
+    line-height: normal;
+
+    width: auto;
+    height: auto;
+
+    border: 0;
+    background: transparent;
+}
+
+input[type='file']
+{
+    line-height: normal;
+
+    height: auto;
+    padding: math.div($spacer, 4) math.div($spacer, 2);
+}
+
+input[type='submit']
+{
+    border-radius: 0;
+}
+
+input[disabled]
+{
+    cursor: not-allowed;
+
+    background-color: whitesmoke;
+}
+
+select
+{
+    line-height: normal;
+
+    padding: 0;
+    padding-left: math.div($spacer, 2);
+}
+
+textarea
+{
+    overflow: auto;
+
+    min-height: $spacer * 4;
+
+    resize: vertical;
+    vertical-align: top;
+}
+
+
+
+/**
+ * Form utility classes
+ */
+
+.form--inline
+{
+    .form__group
+    {
+        display: inline-block;
+    }
+}
+
+.form
+{
+    .form__group
+    {
+        display: block;
+
+        margin-bottom: $spacer;
+        .form__label
+        {
+            display: block;
+
+            margin-bottom: math.div($spacer, 2);
+        }
+    }
+}

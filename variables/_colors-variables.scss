@@ -1,0 +1,52 @@
+// scss-docs-start gray-color-variables
+$white:    #e4edf4;
+$gray-100: #c0c0c0;
+$gray-200: #9a9a9a;
+$gray-300: #7b7b7b;
+$gray-400: #626262;
+$gray-500: #4e4e4e;
+$gray-600: #3e3e3e;
+$gray-700: #323232;
+$gray-800: #282828;
+$gray-900: #1a1a1a;
+$black:    #000100;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+$blue:    #4169e1;
+$indigo:  #6600ff;
+$purple: #510bda;
+$pink: #cc3399;
+$red: #dc3545;
+$orange: #ff9966;
+$yellow: #ffe41e;
+$green: #0bda51;
+$teal: #caffff;
+$cyan: #0abab5;
+$silver: #a8a9ad;
+$chocolate: #7b3f00;
+$brown: #623412;
+$camel: #c19a6b;
+$saltpan: #ffffcc;
+$white-chocolate: #ede6d6;
+$dark-vanilla: #d1bea8;
+$ghost-white: #fbfbfd;
+$deep-sky-blue: #0dcaf0;
+$coral: #ff7f50;
+$maroon: #800000;

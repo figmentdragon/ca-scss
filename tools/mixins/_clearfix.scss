@@ -1,9 +1,18 @@
-// scss-docs-start clearfix
-@mixin clearfix() {
+@mixin clearfix {
   &::after {
-    display: block;
-    clear: both;
-    content: "";
+    content : "";
+    display : block;
+    clear   : both;
+  }
+
+  &:after,
+  &:before {
+    content      : ' ';
+    display      : table;
+    table-layout : fixed;
+  }
+
+  &:after {
+    clear : both;
   }
 }
-// scss-docs-end clearfix

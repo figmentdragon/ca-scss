@@ -1,0 +1,95 @@
+$primary: $cyan;
+$secondary: $maroon;
+$accent: $yellow;
+$secondary-accent: $coral;
+$success: $green;
+
+$warning: $orange;
+
+$light: $gray-200;
+$dark: $gray-800;
+
+$white-accent: $ghost-white;
+$muted: $silver;
+
+$info: $blue;
+$info-bg: $deep-sky-blue;
+
+$alert: $red;
+$alert-bg: $pink;
+
+$active: $primary;
+$active-bg: $teal;
+
+$disabled: $gray-500;
+$disabled-bg: $gray-300;
+
+$hover: $accent;
+$hover-bg: $orange;
+$active-percentage: 25%;
+
+$focus: shift-color($hover, $active-percentage);
+$focus-bg: $secondary-accent;
+
+$visited: $purple;
+$visited-bg: $indigo;
+
+$caption: $gray-500;
+$text-shadow: $gray-700;
+$box-shadow: $chocolate;
+$inset-box-shadow: $camel;
+
+$input-focus: $gray-900;
+$input-focus-bg: $ghost-white;
+
+$input: $gray-500;
+$input-bg: $gray-600;
+
+$divider: $accent;
+$table: $secondary;
+$border: $chocolate;
+$nav: $camel;
+$nav-bg: $saltpan;
+
+$colors: (
+  'blue':       $blue,
+  'indigo':     $indigo,
+  'purple':     $purple,
+  'pink':       $pink,
+  'red':        $red,
+  'orange':     $orange,
+  'yellow':     $yellow,
+  'green':      $green,
+  'teal':       $teal,
+  'cyan':       $cyan,
+  'white':      $white,
+  'gray':       $gray-600,
+  'dark':       $gray-800,
+  'light':      $gray-200,
+  'silver': $silver,
+  'chocolate': $chocolate,
+  'brown': $brown,
+  'camel': $camel,
+  'saltpan': $saltpan,
+  'white-chocolate': $white-chocolate,
+  'dark-vanilla': $dark-vanilla,
+  'ghost-white': $ghost-white,
+  'deep-sky-blue': $deep-sky-blue,
+  'coral': $coral,
+  'maroon': $maroon
+);
+
+$theme-colors: (
+  primary:    $primary,
+  secondary:  $secondary,
+  success:    $success,
+  info:       $info,
+  warning:    $warning,
+  alert:      $alert,
+  light:      $light,
+  dark:       $dark
+);
+
+// scss-docs-start theme-colors-rgb
+//$theme-colors-rgb: map-loop($theme-colors, to-rgb, $value");
+// scss-docs-end theme-colors-rgb

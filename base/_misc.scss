@@ -1,0 +1,12 @@
+/* Misc –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr
+{
+    overflow: visible;  box-sizing: content-box;  height: 0;  margin-top: calc($base-unit * 4);  margin-bottom: calc($base-unit * 5);  border-width: 0;  border-top: 1px solid #e1e1e1;  background-color: var(--body-bg);
+}
+
+[hidden],
+template
+{
+    display: none;
+}

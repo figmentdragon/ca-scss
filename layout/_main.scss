@@ -1,0 +1,48 @@
+/* # MAIN
+================================================================== */
+
+main
+{
+    z-index: $zindex-main;
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex: 1 1 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    word-wrap: break-word;
+}
+
+.main
+{
+    position: absolute;
+    top: 2rem;
+    right: $col1;
+    bottom: 1rem;
+    left: $col2;
+
+    width: $col15;
+    max-width: 93.75%;
+    height: ;
+    max-height: 87.50%;
+    margin: $grid-gutter;
+    padding: $padding-md;;;
+}
+
+
+#main
+{
+    border-width: $card-border-width;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: $border-radius-lg;
+    background-color: $card-bg;
+    background-attachment: fixed;
+    background-clip: border-box;
+    box-shadow: $card-box-shadow;
+
+    @include border-radius($card-border-radius);
+    @include box-shadow($card-box-shadow);
+}

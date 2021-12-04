@@ -1,0 +1,43 @@
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $active;
+$link-decoration:                         none;
+$link-shade-percentage:                   20%;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration:                   underline;
+
+$stretched-link-pseudo-element:           after;
+$stretched-link-z-index:                  1;
+
+// Components
+$border-width: 3px;
+$border-width-xs: 1px;
+$border-width-sm: math.div($border-width, 2);
+$border-width-focus: calc($border-width * 2 );
+
+// scss-docs-start border-radius-variables
+// scss-docs-start border-radius-variables
+$border-radius-xs: .25rem;
+$border-radius-sm: .75rem;
+$border-radius-md: .875rem;
+$border-radius-lg: 1.05rem;
+$border-radius-xl: 1.25rem;
+$border-radius-xxl: 1.50rem;
+$border-radius-pill: 50rem;
+
+$border-radius: $border-radius-md;
+
+.border-gradient-* {
+  border-width : lg;
+  border-style : solid;
+  border-radius: $border-radius-md;
+}
+
+$transition-base:             all .2s ease-in-out;
+$transition-fade:             opacity .15s linear;
+// scss-docs-start collapse-transition
+$transition-collapse:         height .35s ease;
+$transition-collapse-width:   width .35s ease;
+// scss-docs-end collapse-transition

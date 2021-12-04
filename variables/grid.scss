@@ -1,0 +1,46 @@
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$grid-breakpoints: (
+ grid-breakpoint-xs: 0,
+ grid-breakpoint-xm: 576px,
+ grid-breakpoint-md: 768px,
+ grid-breakpoint-lg: 992px,
+ grid-breakpoint-xl: 1200px,
+ grid-breakpoint-xxl: 1400px
+);
+
+$grid-breakpoint-xs: grid-breakpoint-xs;
+$grid-breakpoint-sm: grid-breakpiont-sm;
+$grid-breakpoint-md: grid-breakpoint-md;
+$grid-breakpoint-lg: grid-breakpoint-lg;
+$grid-breakpoint-xl: grid-breakpoint-xl;
+$grid-breakpoint-xxl: grid-breakpoint-xxl;
+
+$default_width: 610px;
+$max_content_width: 1320px;
+
+$grid-columns: 16;
+$grid-gutter: 5px;
+$grid-row-columns: 16;
+$grid-max-width: 1320px + ($grid-gutter * 2);
+$gutters: $spacer;
+$gutter-x: .5rem;
+$gutter-y: .5rem;
+$grid-rows: $grid-row-columns;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+// Container padding
+$container-padding-x: $grid-gutter * .5;

@@ -1,0 +1,106 @@
+$base-unit: 1.05rem;
+$xs: $base-unit * .75;
+$sm: $base-unit * .875;
+$md: $base-unit * 1.05;
+$lg: $base-unit * 1.25;
+$xl: $base-unit * 1.50;
+$xxl: $base-unit * 2.50;
+
+
+$spacer: 1.1rem;
+$spacer-xs: $base-unit * .75;
+$spacer-sm: $base-unit * .875;
+$spacer-md: $base-unit * 1.05;
+$spacer-lg: $base-unit * 1.25;
+$spacer-xl: $base-unit * 1.50;
+$spacer-xxl: $base-unit * 2.50;
+
+$padding-sm: calc($spacer * .875);
+$padding-md: calc($spacer * 1.05);
+$padding-lg: calc($spacer * 1.25);
+$padding-xl: calc($spacer * 1.50);
+$padding-xxl: calc($spacer * 2.50);
+
+$padding-sm: calc($spacer * .875);
+$padding-y-md: calc($spacer * 1.05);
+$padding-y-lg: calc($spacer * 1.25);
+$padding-y-xl: calc($spacer * 1.50);
+$padding-y-xxl: calc($spacer * 2.50);
+
+//$negative-spacers: if($enable-negative-margins, negativify-map($spacer), null);
+
+$position-values: (
+  0: 0,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+);
+
+$aspect-ratios: (
+  '1x1': 100%,
+  '4x3': calc(3 / 4 * 100%),
+  '16x9': calc(9 / 16 * 100%),
+  '21x9': calc(9 / 21 * 100%)
+);
+
+$col1: 6.25%;
+$col2: 12.50%;
+$col3: 18.75%;
+$col4: 25%;
+$col5: 31.25%;
+$col6: 37.50%;
+$col7: 43.75%;
+$col8: 50%;
+$col9: 56.25%;
+$col10: 62.50%;
+$col11: 68.75%;
+$col12: 75%;
+$col13: 81.25%;
+$col14: 87.50%;
+$col15: 93.75%;
+$col16: 100%;
+
+$row1: 6.25%;
+$row2: 12.50%;
+$row3: 18.75%;
+$row4: 25%;
+$row5: 31.25%;
+$row6: 37.50%;
+$row7: 43.75%;
+$row8: 50%;
+$row9: 56.25%;
+$row10: 62.50%;
+$row11: 68.75%;
+$row12: 75%;
+$row13: 81.25%;
+$row14: 87.50%;
+$row15: 93.75%;
+$row16: 100%;
+
+// Placeholders
+
+// scss-docs-start placeholders
+$placeholder-opacity-max: .5 !default;
+$placeholder-opacity-min: .2 !default;
+// scss-docs-end placeholders
+
+
+/**
+ * ## Z-Index
+ =========================*/
+$zindex-html-body: 100;
+$zindex-main: 300;
+$zindex-card-header: 400;
+$zindex-header: 500;
+$zindex-footer: 700;
+$zindex-nav: 900;
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-offcanvas-backdrop: 1040;
+$zindex-offcanvas: 1045;
+$zindex-modal-backdrop: 1050;
+$zindex-modal: 1055;
+$zindex-popover: 1070;
+$zindex-tooltip: 1080;

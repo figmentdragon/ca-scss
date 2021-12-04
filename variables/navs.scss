@@ -1,0 +1,168 @@
+// Navs
+$caret-width: .33rem;
+$caret-vertical-align: $caret-width * .875;
+$caret-spacing: $caret-width * .875;
+
+// scss-docs-start nav-variables
+$nav-link-padding-y: .5rem;
+$nav-link-padding-x: 1rem;
+$nav-link-font-size: 1.25rem;
+$nav-link-font-weight: bold;
+$nav-link-color: $nav;
+$nav-link-hover-color: $hover;
+$nav-link-text-shadow: $text-shadow;
+$nav-link-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+$nav-link-disabled-color: $disabled;
+$nav-link-line-height: ($base-unit * $line-height-body) * 2;
+
+$nav-link-spacer-xs: calc($spacer * $xs);
+$nav-link-spacer-sm: calc($spacer * $sm);
+$nav-link-spacer-md: calc($spacer * $xl);
+$nav-link-spacer-lg: calc($spacer * $lg);
+$nav-link-spacer-xl: calc($spacer * $xl);
+$nav-link-spacer-xxl: calc($spacer * $xxl);
+
+$nav-link-color: $active;
+$nav-link-hover-color: $hover;
+$nav-link-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+$nav-link-disabled-color: $disabled;
+
+$nav-tabs-border-color: $border;
+$nav-tabs-border-width: $border-width;
+$nav-tabs-border-radius: $border-radius-sm;
+$nav-tabs-link-hover-border-color: $hover;
+$nav-tabs-link-active-color: $active;
+$nav-tabs-link-active-bg: $nav-bg;
+$nav-tabs-link-active-border-color: $active;
+
+$nav-pills-link-active-color: $active;
+$nav-pills-link-active-bg: $active-bg;
+$nav-pills-border-radius: $border-radius-pill;
+// scss-docs-end nav-variables
+
+// Navbar
+
+// scss-docs-start navbar-variables
+$navbar-padding-y: $base-unit * .5;
+$navbar-padding-x: $spacer * .75;
+
+$navbar-nav-link-padding-x: .5rem;
+
+$navbar-brand-font-size: font-lg;
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$nav-link-height: line-height-lg;
+$navbar-brand-height: 4vh;
+$navbar-brand-padding-y: $spacer * .75;
+$navbar-brand-margin-end: 1rem;
+
+$navbar-toggler-padding-y: .25rem;
+$navbar-toggler-padding-x: .75rem;
+$navbar-toggler-font-size: font-lg;
+$navbar-toggler-border-radius: $btn-border-radius;
+$navbar-toggler-focus-width: $btn-focus-width;
+$navbar-toggler-transition: box-shadow .15s ease-in-out;
+// scss-docs-end navbar-variables
+
+// scss-docs-start navbar-theme-variables
+$navbar-dark-color: rgba($black, .55);
+$navbar-dark-hover-color: rgba($hover, .75);
+$navbar-dark-active-color: $active;
+$navbar-dark-disabled-color: rgba($disabled, .25);
+$navbar-dark-toggler-icon-bg: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'><path stroke=\'#{$navbar-dark-color}\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' stroke-width=\'2\' d=\'M4 7h22M4 15h22M4 23h22\'/></svg>');
+$navbar-dark-toggler-border-color: rgba($active, .1);
+
+$navbar-dark-brand-color: $primary;
+$navbar-dark-brand-hover-color: $hover;
+// scss-docs-end navbar-theme-variables
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+// scss-docs-start dropdown-variables
+$dropdown-min-width: 10rem;
+$dropdown-padding-x: 0;
+$dropdown-padding-y: .5rem;
+$dropdown-spacer: .125rem;
+$dropdown-font-size: $base-unit;
+$dropdown-color: $body;
+$dropdown-bg: $body-bg;
+$dropdown-border-color: rgba($black, .15);
+$dropdown-border-radius: $border-radius;
+$dropdown-border-width: $border-width;
+$dropdown-inner-border-radius: subtract($dropdown-border-radius, $dropdown-border-width);
+$dropdown-divider-bg: $divider;
+$dropdown-divider-margin-y: $base-unit * .5;
+$dropdown-box-shadow: $box-shadow;
+
+$dropdown-link-color: $body;
+$dropdown-link-hover-color: shade-color($dropdown-link-color, 10%);
+$dropdown-link-hover-bg: $body-bg;
+
+$dropdown-link-active-color: $active;
+$dropdown-link-active-bg: $active-bg;
+
+$dropdown-link-disabled-color: $disabled;
+$dropdown-link-disabled-bg: $disabled-bg;
+
+$dropdown-item-padding-y: $base-unit * .25;
+$dropdown-item-padding-x: $base-unit;
+
+$dropdown-header-color: $primary;
+$dropdown-header-padding: $dropdown-padding-y $dropdown-item-padding-x;
+// scss-docs-end dropdown-variables
+
+// scss-docs-start dropdown-dark-variables
+$dropdown-dark-color: $body-bg;
+$dropdown-dark-bg: $body;
+$dropdown-dark-border-color: $body-bg;
+$dropdown-dark-divider-bg: $accent;
+$dropdown-dark-box-shadow: null;
+$dropdown-dark-link-color: $body-bg;
+$dropdown-dark-link-hover-color: $hover;
+$dropdown-dark-link-hover-bg: $hover-bg;
+$dropdown-dark-link-active-color: $active;
+$dropdown-dark-link-active-bg: $active-bg;
+$dropdown-dark-link-disabled-color: $disabled;
+$dropdown-dark-header-color: $primary;
+// scss-docs-end dropdown-dark-variables
+
+// Pagination
+
+// scss-docs-start pagination-variables
+$pagination-padding-y: .375rem;
+$pagination-padding-x: .75rem;
+$pagination-padding-y-sm: .25rem;
+$pagination-padding-x-sm: .5rem;
+$pagination-padding-y-lg: .75rem;
+$pagination-padding-x-lg: 1.5rem;
+
+$pagination-color: $component-active-color;
+$pagination-bg: $ghost-white;
+$pagination-border-width: $border-width;
+$pagination-border-radius: $border-radius;
+$pagination-margin-start: -$pagination-border-width;
+$pagination-border-color: $primary;
+
+$pagination-focus-color: $hover;
+$pagination-focus-bg: $primary;
+$pagination-focus-box-shadow: $input-btn-focus-box-shadow;
+$pagination-focus-outline: 0;
+
+$pagination-hover-color: $hover;
+$pagination-hover-bg: $primary;
+$pagination-hover-border-color: $primary;
+
+$pagination-active-color: $active;
+$pagination-active-bg: $component-active-bg;
+$pagination-active-border-color: $pagination-active-bg;
+
+$pagination-disabled-color: $primary;
+$pagination-disabled-bg: $ghost-white;
+$pagination-disabled-color: $primary;
+
+$pagination-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$pagination-border-radius-sm: $border-radius-sm;
+$pagination-border-radius-lg: $border-radius-lg;
+// scss-docs-end pagination-variables
