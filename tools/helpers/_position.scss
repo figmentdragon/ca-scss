@@ -1,30 +1,19 @@
 // Shorthand
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: $zindex-fixed;
+.fixed-top
+{
+    position: fixed;
+    z-index: $z-index-fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
-.fixed-bottom {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: $zindex-fixed;
-}
-
-// Responsive sticky top
-@each $grid-breakpoint in map-keys($breakpoints) {
-  @include media-breakpoint-up($grid-breakpoint) {
-    $infix: breakpoint-infix($breakpoints, $grid-breakpoints);
-
-    .sticky#{$infix}-top {
-      position: sticky;
-      top: 0;
-      z-index: $zindex-sticky;
-    }
-  }
+.fixed-bottom
+{
+    position: fixed;
+    z-index: $z-index-fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }

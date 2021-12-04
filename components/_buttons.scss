@@ -1,17 +1,21 @@
 .btn {
-    background-color: $brand-colour;
-    color: $base-background-colour;
-    border: 1px solid transparent;
-    display: inline-block;
-    padding: #{$base-spacing-unit / 4} $base-spacing-unit;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
+	font-family: $btn-font-family;
+	font-weight: $btn-font-weight;
+	line-height: $btn-line-height;
+	text-decoration: $link-decoration;
+  background-color: transparent;
+  color: $body-color;
+  border: $btn-border-width solid transparent;
+  display: inline-block;
+    padding: #{$base-unit / 4} $base-unit;
+  text-align: center;
+  white-space: $btn-white-space;
+  vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
-    user-select: none;
-    width: auto;
-    transition: all .5s;
+  user-select: none;
+	border-radius: $btn-border-radius;
+  transition: $btn-transition;
 
     &::-moz-focus-inner {
         border: 0;
@@ -19,41 +23,65 @@
     }
 
     &:hover {
-        text-decoration: none;
-        background-color: $base-background-colour;
-        color: $brand-colour;
-        border-color: $brand-colour;
+        text-decoration: $link-hover-decoration;
+        background-color: var(--body-bg);
+    		color: $body-color;
+        border-color: $primary-color;
     }
+		
+		.btn-check:focus + &,
+		&:focus {
+			outline: 0;
+			box-shadow: $btn-focus-box-shadow;
+		}
 
-    &.is-disabled,
-    &:disabled {
+    &.disabled,
+    &:disabled,
+		fieldset:disabled & {
         pointer-events: none;
-        opacity: .65;
+        opacity: $btn-disabled-opacity;
+				box-shadow: none;
     }
 }
 
-.btn--inverse {
-    background-color: $base-background-colour;
-    color: $brand-colour;
-    border: 1px solid $brand-colour;
-
-    &:hover {
-        background-color: $brand-colour;
-        color: $base-background-colour;
-        border-color: transparent;
-    }
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
 }
 
-.btn--block {
-    display: block;
-    width: 100%;
-
-    + .btn--block {
-        margin-top: $base-spacing-unit / 4;
-    }
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant%value;
+  }
 }
 
-.btn--link {
-    background-color: transparent;
-    color: $brand-colour;
+.btn-link {
+  font-weight: $font-weight-base;
+  color: $btn-link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $btn-link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+  }
+
+  // No need for an active state here
+}
+
+.btn-lg {
+  @include button-size ($btn-padding-y-lg, $btn-padding-x-lg, $btn-large-font-size, $btn-border-radius-lg);
+}
+
+.btn-sm {
+  @include button-size ($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
 }

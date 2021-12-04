@@ -1,18 +1,41 @@
+// scss-docs-start clearfix
 @mixin clearfix {
   &::after {
-    content : "";
-    display : block;
-    clear   : both;
+    display: block;
+    clear: both;
+
+    content: '';
   }
 
   &:after,
   &:before {
-    content      : ' ';
-    display      : table;
-    table-layout : fixed;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+
+    width: 0;
+    height: 0;
+
+    table-layout: fixed;
+
+    content: ' ';
   }
 
   &:after {
     clear : both;
   }
+}
+
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+
+    width: 0;
+    height: 0;
 }
