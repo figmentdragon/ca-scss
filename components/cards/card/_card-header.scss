@@ -1,0 +1,40 @@
+.card-header {
+  padding: $card-cap-padding-x $card-cap-padding-y;
+  margin-bottom: 0;
+  background-color: $card-cap-bg;
+  border-bottom: $card-border-width;
+  border-style: solid;
+  border-color: $card-border-color;
+  display: flow-root;
+  display: block;
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  box-sizing: border-box;
+  @include box-shadow($card-box-shadow);
+
+  &:first-child {
+    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+  }
+}
+
+.card-title {
+  font-family: $post-title-font;
+  align-self: flex-end;
+  color: $color-post-title;
+  display: block;
+  display: flex;
+  font-size: $card-title-font-size;
+  font-weight: $card-title-text-font-weight;
+  line-height: normal;
+  overflow: hidden;
+  margin: 0;
+}
+
+.card-lead {
+  font-family: $lead-font;
+  font-size: $lead-font-size;
+  color: $color-lead-text;
+  overflow: hidden;
+  width: 90%;
+}
