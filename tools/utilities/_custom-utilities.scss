@@ -1,79 +1,11 @@
-$variable-prefix: --;
-$include-column-box-sizing: true !default;
-//@use 'tools/utilities/map-merge'
-
-@import 'tools/functions';
-
-@import 'variables';
-@import 'mixins';
-
-@import 'tools/utilities/utilities';
-@import 'tools/utilities/generator';
-
-$utilities: map-merge(
-  $utilities, (
-    'border': map-merge(
-      map-get($utilities, 'border'),
-      ( responsive: true ),
-    ),
-  )
-);
+@import "functions";
+@import "variables";
+@import "utilities";
 
 $utilities: map-merge(
   $utilities,
   (
-    'cursor': (
-      property: cursor,
-      class: cursor,
-      responsive: true,
-      values: auto pointer grab,
-    )
-  )
-);
-
-@import 'assets/styles/tools/functions';
-@import 'variables';
-@import 'mixins';
-@import 'utilities';
-
-$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans, $silvers, $chocolates, $browns, $camels, $saltpans, $white-chocolates, $dark-vanillas, $ghost-whites, $deep-sky-blues, $corals, $maroons);
-
-$utilities: map-merge(
-  $utilities,
-  (
-    'color': map-merge(
-      map-get($utilities, 'color'),
-      (
-        values: map-merge(
-          map-get(map-get($utilities, 'color'), 'values'),
-          (
-            $all-colors
-          ),
-        ),
-      ),
-    ),
-  )
-);
-
-@import 'assets/styles/tools/utilities/api';
-
-@import 'assets/styles/tools/functions';
-@import 'mixins';
-@import 'utilities';
-
-$utilities: map-merge(
-  $utilities, (
-    'border': map-merge(
-      map-get($utilities, 'border'),
-      ( responsive: true ),
-    ),
-  )
-);
-
-$utilities: map-merge(
-  $utilities,
-  (
-    'cursor': (
+    "cursor": (
       property: cursor,
       class: cursor,
       responsive: true,

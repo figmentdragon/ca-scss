@@ -1,255 +1,83 @@
-// Site Name: The Creativity Architect
-// Author: CJM Termini
-//Stylesheet: Responsive  Stylesheet
+/**
+ * Repsonsive Styles
+ */
 
-$default_width: 610px;
-$max_content_width: 1240px;
-$breakpoint_sm: 482px;
-$breakpoint_md: 592px;
-$breakpoint_lg: 652px;
-$breakpoint_xl: 822px;
-$breakpoint_xxl: 1024px;
+/**
+ * Required Variables
+ */
+
+$default-width: 610px;
+$max-content-width: 1240px;
+
+$tablet: 1225px;
+$desktop: 1824px;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
 
 // Responsive breakpoints mixin
-@mixin media( $res )
-{
-    @if mobile-only == $res
-    {
-        @media only screen and (max-width: #{$breakpoint_sm - 1})
-        {
-            @content;
-        }
-    }
+@mixin media($res) {
 
-    @if mobile == $res
-    {
-        @media only screen and (min-width: #{$breakpoint_sm})
-        {
-            @content;
-        }
-    }
+	@if mobile-only == $res {
+		@media only screen and (max-width: #{$breakpoint-sm - 1}) {
+			@content;
+		}
+	}
 
-    @if tablet-only == $res
-    {
-        @media only screen and (max-width: #{$breakpoint_md - 1})
-        {
-            @content;
-        }
-    }
+	@if mobile == $res {
+		@media only screen and (min-width: #{$breakpoint-sm}) {
+			@content;
+		}
+	}
 
-    @if tablet == $res
-    {
-        @media only screen and (min-width: #{$breakpoint_md})
-        {
-            @content;
-        }
-    }
+	@if tablet-only == $res {
+		@media only screen and (max-width: #{$breakpoint-md - 1}) {
+			@content;
+		}
+	}
 
-    @if laptop-only == $res
-    {
-        @media only screen and (max-width: #{$breakpoint_lg - 1})
-        {
-            @content;
-        }
-    }
+	@if tablet == $res {
+		@media only screen and (min-width: #{$breakpoint-md}) {
+			@content;
+		}
+	}
 
-    @if laptop == $res
-    {
-        @media only screen and (min-width: #{$breakpoint_lg})
-        {
-            @content;
-        }
-    }
+	@if laptop-only == $res {
+		@media only screen and (max-width: #{$breakpoint-lg - 1}) {
+			@content;
+		}
+	}
 
-    @if desktop-only == $res
-    {
-        @media only screen and (max-width: #{$breakpoint_xl - 1})
-        {
-            @content;
-        }
-    }
+	@if laptop == $res {
+		@media only screen and (min-width: #{$breakpoint-lg}) {
+			@content;
+		}
+	}
 
-    @if desktop == $res
-    {
-        @media only screen and (min-width: #{$breakpoint_xl})
-        {
-            @content;
-        }
-    }
+	@if desktop-only == $res {
+		@media only screen and (max-width: #{$breakpoint-xl - 1}) {
+			@content;
+		}
+	}
 
-    @if wide-only == $res
-    {
-        @media only screen and (max-width: #{$breakpoint_xxl - 1})
-        {
-            @content;
-        }
-    }
+	@if desktop == $res {
+		@media only screen and (min-width: #{$breakpoint-xl}) {
+			@content;
+		}
+	}
 
-    @if wide == $res
-    {
-        @media only screen and (min-width: #{$breakpoint_xxl})
-        {
-            @content;
-        }
-    }
-}
+	@if wide-only == $res {
+		@media only screen and (max-width: #{$breakpoint-xxl - 1}) {
+			@content;
+		}
+	}
 
-/**
- * Root Media Query Variables
- */
-:root
-{
-    $responsive-base: 1.26vw;
-    $responsive-aligndefault-width: calc(100vw - $responsive-base);
-    $responsive-alignwide-width: calc(100vw - $responsive-base);
-    $responsive-alignfull-width: 100%;
-    $responsive-alignright-margin: $responsive-base;
-    $responsive-alignleft-margin: $responsive-base;
-}
-
-@include media(mobile)
-{
-    :root
-    {
-        $responsive-base: 1.26vw;
-        $responsive-aligndefault-width: min(calc(100vw - 4vw) * $responsive-base), #{$default_width};
-        $responsive-alignwide-width: calc(100vw - 4vw) * $responsive-base;
-        $responsive-alignright-margin: min(calc(.5 * 100vw) - $responsive-base);
-        $responsive-alignleft-margin: calc(.5 * (100vw - $responsive-base));
-    }
-}
-
-@include media(desktop)
-{
-    :root
-    {
-        $responsive-base: 1.26vw;
-        $responsive-aligndefault-width: min(calc(100vw - 8 * $responsive-base)), #{$default_width};
-        $responsive-alignwide-width: min(calc(100vw - 8 * $responsive-base)), #{$max_content_width};
-    }
-}
-
-/**
- * Extends
- */
-
-$responsive-base: 1.26vw;
-$responsive-aligndefault-width: min(calc(100vw - 8 * $responsive-base)), #{$default_width};
-$responsive-alignwide-width: min(calc(100vw - 8 * $responsive-base)), #{$max_content_width};
-%responsive-aligndefault-width
-{
-    max-width: $responsive-aligndefault-width;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-%responsive-alignwide-width
-{
-    max-width: $responsive-alignwide-width;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-$responsive-alignfull-width: 100vw;
-%responsive-alignfull-width-mobile
-{
-    width: $responsive-alignfull-width;
-    max-width: $responsive-alignfull-width;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@include media(mobile)
-{
-    %responsive-alignfull-width
-    {
-        width: auto;
-        max-width: $responsive-alignfull-width;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
-%responsive-alignwide-width-nested
-{
-    width: $responsive-alignwide-width;
-    max-width: $responsive-alignfull-width;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-%responsive-alignfull-width-nested
-{
-    width: calc($responsive-alignfull-width) - calc(2 * $responsive-base);
-    max-width: $responsive-alignfull-width;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@include media(desktop)
-{
-    %responsive-alignfull-width-nested
-    {
-        width: calc($responsive-alignfull-width) - calc(4 * $responsive-base);
-        max-width: $responsive-alignfull-width;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
-
-%responsive-alignleft-mobile
-{
-    /*rtl:ignore*/
-    margin-right: $responsive-base;
-    /*rtl:ignore*/
-    margin-left: 0;
-}
-
-@include media(mobile)
-{
-    $responsive-alignleft-margin: calc(.5 * (100vw - $responsive-base));
-    %responsive-alignleft
-    {
-        /*rtl:ignore*/
-        margin-right: $responsive-base;
-        /*rtl:ignore*/
-        margin-left: $responsive-alignleft-margin;
-    }
-}
-
-%responsive-alignright-mobile
-{
-    /*rtl:ignore*/
-    margin-right: 0;
-    /*rtl:ignore*/
-    margin-left: $responsive-base;
-}
-
-@include media(mobile)
-{
-    $responsive-alignright-margin: min(calc(.5 * 100vw) - $responsive-base);
-    %responsive-alignright
-    {
-        /*rtl:ignore*/
-        margin-right: $responsive-alignright-margin;
-        /*rtl:ignore*/
-        margin-left: $responsive-base;
-    }
-}
-
-// Output
-.default-max-width
-{
-    @extend %responsive-aligndefault-width;
-}
-
-.wide-max-width
-{
-    @extend %responsive-alignwide-width;
-}
-
-.full-max-width
-{
-    @extend %responsive-alignfull-width;
+	@if wide == $res {
+		@media only screen and (min-width: #{$breakpoint-xxl}) {
+			@content;
+		}
+	}
 }
