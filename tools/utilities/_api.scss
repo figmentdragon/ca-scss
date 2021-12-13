@@ -1,5 +1,5 @@
-// RFS rescaling
-/* @media (min-width: $rfs-mq-value)
+/* RFS rescaling */
+@media (min-width: $rfs-mq-value)
 {
     @each $breakpoint in map-keys($grid-breakpoints)
     {
@@ -7,11 +7,11 @@
 
         @if (map-get($grid-breakpoints, $breakpoint) < $rfs-breakpoint)
         {
-            // Loop over each utility property
+            /* Loop over each utility property */
             @each $key, $utility in $utilities
             {
-                // The utility can be disabled with `false`, thus check if the utility is a map first
-                // Only proceed if responsive media queries are enabled or if it's the base media query
+                /* The utility can be disabled with `false`, thus check if the utility is a map first */
+                /* Only proceed if responsive media queries are enabled or if it's the base media query */
                 @if type-of($utility) == 'map' and map-get($utility, rfs) and (map-get($utility, responsive) or $infix == '')
                 {
                     @include generate-utility($utility, $infix, true);
@@ -20,15 +20,14 @@
         }
     }
 }
-*/
 
-// Print utilities
+/* Print utilities */
 @media print
 {
     @each $key, $utility in $utilities
     {
-        // The utility can be disabled with `false`, thus check if the utility is a map first
-        // Then check if the utility needs print styles
+        /* The utility can be disabled with `false`, thus check if the utility is a map first */
+        /* Then check if the utility needs print styles */
         @if type-of($utility) == 'map' and map-get($utility, print) == true
         {
             @include generate-utility($utility, '-print');

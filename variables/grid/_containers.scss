@@ -4,16 +4,22 @@ $container-max-widths: (
 sm: 540px,
 md: 720px,
 lg: 960px,
-xl: 1140px,
-xxl: 1320px
+xl: 1199px,
+xxl: 1368px
 );
 
-$default-width: 610px;
-$max-content-width: 1320px;
 
 /* Container padding */
 $container-padding-x: $grid-gutter * .5;
 $container-padding-y: $grid-gutter;
 
 $container-offset: (2 * $grid-gutter);
-$container-max-width: $fullhd;
+
+$default-width: 610px;
+$max-content-width: subtract(1400 - calc($container-offset* 2));
+
+$container-xxl-content-max-width: $breakpoint-xxl - $container-offset;
+$container-xl-content-max-width: $breakpoint-xl - $container-offset;
+$container-lg-content-max-width: $breakpoint-lg - $container-offset;
+$container-md-content-max-width: $breakpoint-md - $container-offset;
+$container-sm-content-max-width: $breakpoint-sm - $container-offset;

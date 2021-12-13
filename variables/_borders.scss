@@ -1,0 +1,17 @@
+// Components
+$border-width: 1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+);
+
+$border-width-md: 2;
+$border-width-lg: 3;
+$border-width-focus: 4;
+$border-width-hover: $border-width-lg;
+
+
+$border-color: $gray-300;

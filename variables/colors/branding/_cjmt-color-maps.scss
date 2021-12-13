@@ -1,50 +1,50 @@
 /* COLOR MAPS */
 
 /* fusv-disabled*/
-/* scss-docs-start cjmt-gray-colors-map */
-$cjmt-grays: (
-  100: $cjmt-gray-100,
-  200: $cjmt-gray-200,
-  300: $cjmt-gray-300,
-  400: $cjmt-gray-400,
-  500: $cjmt-gray-500,
-  600: $cjmt-gray-600,
-  700: $cjmt-gray-700,
-  800: $cjmt-gray-800,
-  900: $cjmt-gray-900
+/* scss-docs-start gray-colors-map */
+$grays: (
+  100: $gray-100,
+  200: $gray-200,
+  300: $gray-300,
+  400: $gray-400,
+  500: $gray-500,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
 );
-/* scss-docs-end cjmt-gray-colors-map */
+/* scss-docs-end gray-colors-map */
 /* fusv-enable */
 
 /* scss-docs-start colors-map */
-$cjmt-colors:(
-cjmt-blue:            $cjmt-blue,
-cjmt-indigo:          $cjmt-indigo,
-cjmt-purple:          $cjmt-purple,
-cjmt-pink:            $cjmt-pink,
-cjmt-red:             $cjmt-red,
-cjmt-orange:          $cjmt-orange,
-cjmt-yellow:          $cjmt-yellow,
-cjmt-green:           $cjmt-green,
-cjmt-teal:            $cjmt-teal,
-cjmt-cyan:            $cjmt-cyan,
-cjmt-silver:          $cjmt-silver,
-cjmt-chocolate:       $cjmt-chocolate,
-cjmt-gray:            $cjmt-gray,
-cjmt-black:           $cjmt-black,
-cjmt-white:           $cjmt-white,
-cjmt-camel:           $cjmt-camel,
-cjmt-saltpan:         $cjmt-saltpan,
-cjmt-white-chocolate: $cjmt-white-chocolate,
-cjmt-dark-vanilla:    $cjmt-dark-vanilla,
-cjmt-ghost-white:     $cjmt-ghost-white
+$colors:(
+blue:            $blue,
+indigo:          $indigo,
+purple:          $purple,
+pink:            $pink,
+red:             $red,
+orange:          $orange,
+yellow:          $yellow,
+green:           $green,
+teal:            $teal,
+cyan:            $cyan,
+silver:          $silver,
+chocolate:       $chocolate,
+gray:            $gray,
+black:           $black,
+white:           $white,
+camel:           $camel,
+saltpan:         $saltpan,
+white-chocolate: $white-chocolate,
+dark-vanilla:    $dark-vanilla,
+ghost-white:     $ghost-white
 );
 /* scss-docs-end colors-map */
 
-$cjmt-theme-colors: (
-  cjmt-primary:     $cjmt-primary,
-  cjmt-secondary:   $cjmt-secondary,
-  cjmt-accent:      $cjmt-accent,
+$theme-colors: (
+  primary:     $primary,
+  secondary:   $secondary,
+  accent:      $accent,
   success:          $success,
   info:             $info,
   warning:          $warning,
@@ -69,69 +69,69 @@ input-focus-border: $input-focus-border
 );
 
 
-$cjmt-primary-100: tint-color($cjmt-primary, 80%);
-$cjmt-primary-200: tint-color($cjmt-primary, 60%);
-$cjmt-primary-300: tint-color($cjmt-primary, 40%);
-$cjmt-primary-400: tint-color($cjmt-primary, 20%);
-$cjmt-primary-500: $cjmt-primary;
-$cjmt-primary-600: shade-color($cjmt-primary, 20%);
-$cjmt-primary-700: shade-color($cjmt-primary, 40%);
-$cjmt-primary-800: shade-color($cjmt-primary, 60%);
-$cjmt-primary-900: shade-color($cjmt-primary, 80%);
+$primary-100: tint-color($primary, 80%);
+$primary-200: tint-color($primary, 60%);
+$primary-300: tint-color($primary, 40%);
+$primary-400: tint-color($primary, 20%);
+$primary-500: $primary;
+$primary-600: shade-color($primary, 20%);
+$primary-700: shade-color($primary, 40%);
+$primary-800: shade-color($primary, 60%);
+$primary-900: shade-color($primary, 80%);
 
-$cjmt-secondary-100: tint-color($cjmt-secondary, 80%);
-$cjmt-secondary-200: tint-color($cjmt-secondary, 60%);
-$cjmt-secondary-300: tint-color($cjmt-secondary, 40%);
-$cjmt-secondary-400: tint-color($cjmt-secondary, 20%);
-$cjmt-secondary-500: $cjmt-secondary;
-$cjmt-secondary-600: shade-color($cjmt-secondary, 20%);
-$cjmt-secondary-700: shade-color($cjmt-secondary, 40%);
-$cjmt-secondary-800: shade-color($cjmt-secondary, 60%);
-$cjmt-secondary-900: shade-color($cjmt-secondary, 80%);
+$secondary-100: tint-color($secondary, 80%);
+$secondary-200: tint-color($secondary, 60%);
+$secondary-300: tint-color($secondary, 40%);
+$secondary-400: tint-color($secondary, 20%);
+$secondary-500: $secondary;
+$secondary-600: shade-color($secondary, 20%);
+$secondary-700: shade-color($secondary, 40%);
+$secondary-800: shade-color($secondary, 60%);
+$secondary-900: shade-color($secondary, 80%);
 
-$cjmt-accent-100: tint-color($cjmt-accent, 80%);
-$cjmt-accent-200: tint-color($cjmt-accent, 60%);
-$cjmt-accent-300: tint-color($cjmt-accent, 40%);
-$cjmt-accent-400: tint-color($cjmt-accent, 20%);
-$cjmt-accent-500: $cjmt-accent;
-$cjmt-accent-600: shade-color($cjmt-accent, 20%);
-$cjmt-accent-700: shade-color($cjmt-accent, 40%);
-$cjmt-accent-800: shade-color($cjmt-accent, 60%);
-$cjmt-accent-900: shade-color($cjmt-accent, 80%);
+$accent-100: tint-color($accent, 80%);
+$accent-200: tint-color($accent, 60%);
+$accent-300: tint-color($accent, 40%);
+$accent-400: tint-color($accent, 20%);
+$accent-500: $accent;
+$accent-600: shade-color($accent, 20%);
+$accent-700: shade-color($accent, 40%);
+$accent-800: shade-color($accent, 60%);
+$accent-900: shade-color($accent, 80%);
 
 
-$cjmt-primarys: (
-  'cjmt-primary-100': $cjmt-primary-100,
-  'cjmt-primary-200': $cjmt-primary-200,
-  'cjmt-primary-300': $cjmt-primary-300,
-  'cjmt-primary-400': $cjmt-primary-400,
-  'cjmt-primary-500': $cjmt-primary-500,
-  'cjmt-primary-600': $cjmt-primary-600,
-  'cjmt-primary-700': $cjmt-primary-700,
-  'cjmt-primary-800': $cjmt-primary-800,
-  'cjmt-primary-900': $cjmt-primary-900
+$primarys: (
+  'primary-100': $primary-100,
+  'primary-200': $primary-200,
+  'primary-300': $primary-300,
+  'primary-400': $primary-400,
+  'primary-500': $primary-500,
+  'primary-600': $primary-600,
+  'primary-700': $primary-700,
+  'primary-800': $primary-800,
+  'primary-900': $primary-900
 );
 
-$cjmt-secondarys: (
-  'cjmt-secondary-100': $cjmt-secondary-100,
-  'cjmt-secondary-200': $cjmt-secondary-200,
-  'cjmt-secondary-300': $cjmt-secondary-300,
-  'cjmt-secondary-400': $cjmt-secondary-400,
-  'cjmt-secondary-500': $cjmt-secondary-500,
-  'cjmt-secondary-600': $cjmt-secondary-600,
-  'cjmt-secondary-700': $cjmt-secondary-700,
-  'cjmt-secondary-800': $cjmt-secondary-800,
-  'cjmt-secondary-900': $cjmt-secondary-900
+$secondarys: (
+  'secondary-100': $secondary-100,
+  'secondary-200': $secondary-200,
+  'secondary-300': $secondary-300,
+  'secondary-400': $secondary-400,
+  'secondary-500': $secondary-500,
+  'secondary-600': $secondary-600,
+  'secondary-700': $secondary-700,
+  'secondary-800': $secondary-800,
+  'secondary-900': $secondary-900
 );
 
-$cjmt-accents: (
-  cjmt-accent-100: $cjmt-accent-100,
-  cjmt-accent-200: $cjmt-accent-200,
-  cjmt-accent-300: $cjmt-accent-300,
-  cjmt-accent-400: $cjmt-accent-400,
-  cjmt-accent-500: $cjmt-accent-500,
-  cjmt-accent-600: $cjmt-accent-600,
-  cjmt-accent-700: $cjmt-accent-700,
-  cjmt-accent-800: $cjmt-accent-800,
-  cjmt-accent-900: $cjmt-accent-900
+$accents: (
+  accent-100: $accent-100,
+  accent-200: $accent-200,
+  accent-300: $accent-300,
+  accent-400: $accent-400,
+  accent-500: $accent-500,
+  accent-600: $accent-600,
+  accent-700: $accent-700,
+  accent-800: $accent-800,
+  accent-900: $accent-900
 );

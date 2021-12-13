@@ -15,9 +15,9 @@ $negative-spacers: negativify-map($spacer);
 $spacer-x: $spacer;
 $spacer-y: $spacer;
 
-$spacer-xs: $spacer * .75;
-$spacer-sm: $spacer * .875;
-$spacer-md: $spacer;
-$spacer-lg: $spacer * 1.25;
-$spacer-xl: $spacer * 1.75;
-$spacer-xxl: $spacer * 2.25;
+$spacer-xs: $base-unit * .75;
+$spacer-sm: $base-unit * .875;
+$spacer-md: $base-unit * 1.05;
+$spacer-lg: $base-unit * 1.25;
+$spacer-xl: $base-unit * 1.50;
+$spacer-xxl: $base-unit * 2.50;

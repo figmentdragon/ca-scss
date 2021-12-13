@@ -1,31 +1,30 @@
-$base-unit: 1.05rem;
+$base-unit: 1.05;
 $xs: $base-unit * .75;
 $sm: $base-unit * .875;
 $md: $base-unit * 1.05;
 $lg: $base-unit * 1.25;
 $xl: $base-unit * 1.50;
-$xxl: $base-unit * 2.50;
+$xxl: $base-unit * 1.75;
 
 
-$spacer: 1.1rem;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$negative-spacers: negativify-map($spacer);
+
 $spacer-xs: $base-unit * .75;
 $spacer-sm: $base-unit * .875;
 $spacer-md: $base-unit * 1.05;
 $spacer-lg: $base-unit * 1.25;
 $spacer-xl: $base-unit * 1.50;
 $spacer-xxl: $base-unit * 2.50;
-
-$padding-sm: calc($spacer * .875);
-$padding-md: calc($spacer * 1.05);
-$padding-lg: calc($spacer * 1.25);
-$padding-xl: calc($spacer * 1.50);
-$padding-xxl: calc($spacer * 2.50);
-
-$padding-sm: calc($spacer * .875);
-$padding-y-md: calc($spacer * 1.05);
-$padding-y-lg: calc($spacer * 1.25);
-$padding-y-xl: calc($spacer * 1.50);
-$padding-y-xxl: calc($spacer * 2.50);
 
 //$negative-spacers: if($enable-negative-margins, negativify-map($spacer), null);
 
